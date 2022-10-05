@@ -1,0 +1,5 @@
+module BrowserInfo exposing (..)
+
+
+test =
+    ()

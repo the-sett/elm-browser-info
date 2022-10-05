@@ -1,0 +1,13 @@
+{
+  "name": "@the-sett/elm-browser-info",
+  "version": "1.0.0",
+  "description": "Gather information on which browser the code is running under.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-sett/elm-browser-info"
+  },
+  "main": "src/browser-info.js",
+  "scripts": {},
+  "devDependencies": {}
+}

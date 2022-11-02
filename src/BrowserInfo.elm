@@ -1,7 +1,6 @@
 module BrowserInfo exposing
-    ( BrowserInfoResponsePort
-    , decodeBrowserInfo
-    , GetBrowserInfoPort
+    ( BrowserInfoResponsePort, GetBrowserInfoPort
+    , BrowserInfo(..), decodeBrowserInfo
     )
 
 {-| A ports package for getting information on the browser agent, version and so on.
@@ -9,12 +8,12 @@ module BrowserInfo exposing
 
 # Ports to talk to the JS side.
 
-@docs BrowserInfoResponsePort, GetBrowserInfoPortm
+@docs BrowserInfoResponsePort, GetBrowserInfoPort
 
 
 # Decoder for the results.
 
-@docs decodeBrowserInfo
+@docs BrowserInfo, decodeBrowserInfo
 
 -}
 

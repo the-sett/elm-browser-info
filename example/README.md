@@ -1,3 +1,6 @@
-# elm-input-spike
+# elm-browser-info Example
 
-Figuring out what input method works best for text editing in Elm.
+To run it:
+
+    npm ci
+    npm start

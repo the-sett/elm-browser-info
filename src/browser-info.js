@@ -2,10 +2,10 @@
 var BrowserInfoPorts = function () { };
 
 BrowserInfoPorts.prototype.subscribe =
-    function (app, getBrowserPortName, responsePortNAme) {
+    function (app, getBrowserPortName, responsePortName) {
 
-        if (!getBrowserPortName) getPortName = "getBrowserInfo";
-        if (!responsePortName) responsePortName = "browserInfoResponse";
+        if (!getBrowserPortName) getPortName = "getBrowserInfoPort";
+        if (!responsePortName) responsePortName = "browserInfoResponsePort";
 
         if (app.ports[responsePortName]) {
 
@@ -42,7 +42,7 @@ function fnBrowserDetect() {
         browserName = "No browser detection";
     }
 
-
+    return browserName;
 }
 
 module.exports.BrowserInfoPorts = BrowserInfoPorts;

@@ -20,6 +20,8 @@ module BrowserInfo exposing
 import Json.Decode as Decode exposing (Decoder, Value)
 
 
+{-| Documents the browser agent.
+-}
 type BrowserInfo
     = Chrome
     | Firefox

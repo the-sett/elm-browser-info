@@ -1,6 +1,6 @@
 {
     "type": "package",
-    "name": "the-sett/elm-localstorage",
+    "name": "the-sett/elm-browser-info",
     "summary": "Gather information on which browser the code is running under.",
     "license": "MIT",
     "version": "1.0.0",

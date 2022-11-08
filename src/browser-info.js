@@ -4,19 +4,19 @@ var BrowserInfoPorts = function () { };
 BrowserInfoPorts.prototype.subscribe =
     function (app, getBrowserPortName, responsePortName) {
 
-        if (!getBrowserPortName) getPortName = "getBrowserInfoPort";
+        if (!getBrowserPortName) getBrowserPortName = "getBrowserInfoPort";
         if (!responsePortName) responsePortName = "browserInfoResponsePort";
 
         if (app.ports[responsePortName]) {
 
             var responsePort = app.ports[responsePortName];
 
-            if (app.ports[getPortName]) {
-                app.ports[getPortName].subscribe(function () {
+            if (app.ports[getBrowserPortName]) {
+                app.ports[getBrowserPortName].subscribe(function () {
                     responsePort.send(fnBrowserDetect());
                 });
             } else {
-                console.warn("The " + getPortName + " port is not connected.");
+                console.warn("The " + getBrowserPortName + " port is not connected.");
             }
         } else {
             console.warn("The " + responsePortName + " port is not connected.");

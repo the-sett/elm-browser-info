@@ -1,6 +1,6 @@
 {
   "name": "@the-sett/elm-browser-info",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gather information on which browser the code is running under.",
   "license": "MIT",
   "repository": {
